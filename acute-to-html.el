@@ -60,5 +60,7 @@
 
   (goto-char (point-min))
   (replace-string "ñ" "&ntilde;")
+
+  (message "Acute vocals and enyes replaced")
 )
 ;;; acute-to-html.el ends here
