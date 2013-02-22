@@ -41,26 +41,27 @@
   (interactive)
   "Convert acute to HTML"
 
-  (goto-char (point-min))
-  (replace-string "á" "&aacute;")
+  (save-excursion
+    (goto-char (point-min))
+    (replace-string "á" "&aacute;")
 
-  (goto-char (point-min))
-  (replace-string "é" "&eacute;")
+    (goto-char (point-min))
+    (replace-string "é" "&eacute;")
 
-  (goto-char (point-min))
-  (replace-string "í" "&iacute;")
+    (goto-char (point-min))
+    (replace-string "í" "&iacute;")
 
-  (goto-char (point-min))
-  (replace-string "ó" "&oacute;")
+    (goto-char (point-min))
+    (replace-string "ó" "&oacute;")
+
+    (goto-char (point-min))
+    (replace-string "ú" "&uacute;")
 
 
-  (goto-char (point-min))
-  (replace-string "ú" "&uacute;")
+    (goto-char (point-min))
+    (replace-string "ñ" "&ntilde;")
 
-
-  (goto-char (point-min))
-  (replace-string "ñ" "&ntilde;")
-
-  (message "Acute vocals and enyes replaced")
+    (message "Acute vocals and enyes replaced")
+  )
 )
 ;;; acute-to-html.el ends here
