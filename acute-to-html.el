@@ -57,9 +57,13 @@
     (goto-char (point-min))
     (replace-string "ú" "&uacute;")
 
-
     (goto-char (point-min))
     (replace-string "ñ" "&ntilde;")
+
+    (goto-char (point-min))
+    (replace-string "(" "%28")
+    (goto-char (point-min))
+    (replace-string ")" "%29")
 
     (message "Acute vocals and enyes replaced")
   )
